@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Screen Capture Extension",
+  "version": "1.1",
+  "description": "Capture the current tab's screenshot.",
+  "permissions": ["tabCapture", "activeTab", "scripting", "tabs", "activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Capture Current Tab"
+  },
+  "content_scripts": [],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
