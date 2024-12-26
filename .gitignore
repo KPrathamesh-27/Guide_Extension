@@ -11,6 +11,7 @@ yarn-error.log*
 .vscode/
 *.sublime-project
 *.sublime-workspace
+.env
 *.swp
 *.swo
 *.bak

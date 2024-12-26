@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Screen Capture Extension",
-  "version": "1.1",
+  "name": "Screen Capture Extension with OCR",
+  "version": "1.2",
   "description": "Capture the current tab's screenshot.",
-  "permissions": ["tabCapture", "activeTab", "scripting", "tabs", "activeTab"],
+  "permissions": ["tabCapture", "activeTab", "scripting", "tabs"],
   "action": {
     "default_popup": "popup.html",
     "default_title": "Capture Current Tab"

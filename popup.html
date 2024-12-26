@@ -3,15 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Screen Capture</title>
+  <title>Screen Capture OCR</title>
+  <!-- Import Materialize CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
   <link rel="stylesheet" href="popup.css">
 </head>
 <body>
   <div class="container">
-    <h1>📸 Screen Capture</h1>
-    <p>Click below to take a screenshot of your screen.</p>
-    <button id="capture-btn">Capture Screen</button>
+    <h1 class="center-align">Capture and Extract Text</h1>
+    <div class="input-field">
+      <input type="text" id="user-input" name="user-input">
+      <label for="user-input"></label>
+    </div>
+    <p class="center-align">Click below to capture the current tab and extract text using OCR.</p>
+    <div class="row center-align">
+      <button id="capture-btn" class="btn waves-effect waves-light">Capture & Extract</button>
+    </div>
   </div>
+  
+  <!-- Loading Icon -->
+  <div id="loading" class="center-align" style="display: none;">
+    <img src="spinner.gif" alt="Loading...">
+  </div>
+
+  <!-- Placeholder for result and time -->
+  <div id="result" class="container"></div>
+  <div id="time-taken" class="container"></div>
+  
+  <!-- Import Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="popup.js"></script>
 </body>
 </html>
