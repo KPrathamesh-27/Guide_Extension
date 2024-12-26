@@ -1,6 +1,6 @@
 module.exports = {
     port: process.env.PORT || 3000,
-    hfApiKey: "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",
+    hfApiKey: "hf_xyz", // use own api key from hugging face
     maxFileSize: 10 * 1024 * 1024, // 10MB
     supportedMimeTypes: ['image/jpeg', 'image/png'],
     llmModel: "meta-llama/Llama-3.2-11B-Vision-Instruct",
